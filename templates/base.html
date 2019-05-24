@@ -4,6 +4,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- <style>
+       body{
+            background-image: url('https://lh3.googleusercontent.com/CgQocnLtW3d9_vIGZLPnnMMq-csmQ6LCPgeIx7UlATBQ8-xuDs33a9FSxAJEiDlg6cdg4QK9C9RP6tV5fQ5Bdd8N21CTA5nAxi-w6EwIhDGfbULwx-EvSKeBIFu0l885FDqPY52awHe_bNsNyKMLQi3iYWS0LUKV8rv6pZjqTZj8qaL6u4j_29jaa7HNkjj2-OfyJheerhGW1xIl2x2N1O0hX2UwcKByUfE7aImCdtClSgMaggzoySRwmt3BYx0PEyK00dQgl5EBwXTlJFeu5ACRRdMt54BFJpNYG-4sR6ZXi3ijjrKPZu6fi8nuiduVWOwoBSUkKBHr4SoEyPengN52nH5rAEShsNYpAKG-i5DW3uJhTG844ZPwdOIktvmW063JP3gcUOAAABLJLPMD9qaVDvLZzW2ajcH4hIAONlXMW6Va87r0T7fOCaorB51-gUT-bULRpu_7BwSijVzZnDoaFgJAEZhXwWndVzy5g43Yvue6HbRs7gRuJbixweBtqkntCN0B0tJorFArCged_9CxWOhD6qXin3W8BfuQ57FwPxEMHKSxZvxKNauXquYfHAlssud_FwKAA0790aKQtUgYuGbwIpsq1CKLe21h1OQnsBSuxn8ZLst-p0zAxRJ9tYgJ92Dzbg4K5kwV0bykXPHjD-ShAP4=w423-h915-no');
+            background-size: 100% 100%;
+            height: 100vh;
+            padding:0;
+            margin:0;
+        }
+
+    </style>-->
     <title>--Ethan's Blog--</title>
 
     <!-- meta -->
@@ -17,25 +27,30 @@
     <link rel="stylesheet" href="{% static 'blog/css/pace.css' %}">
     <link rel="stylesheet" href="{% static 'blog/css/custom.css' %}">
     <link rel="stylesheet" href="{% static 'blog/css/highlights/colorful.css' %}">
-
-
+    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}" media="screen" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"  type="text/css" />
     <!-- js -->
     <script src="{% static 'blog/js/jquery-2.1.3.min.js' %}"></script>
     <script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'blog/js/pace.min.js' %}"></script>
     <script src="{% static 'blog/js/modernizr.custom.js' %}"></script>
+
+
 </head>
 
 <body>
+<script src="{% static 'blog/js/canvas-nest.js' %}"></script>
+<canvas id="c_n1"></canvas>
+
 <div class="container">
-    <header id="site-header">
+    <!--<header id="site-header">
         <div class="row">
             <div class="col-md-4 col-sm-5 col-xs-8">
                 <div class="logo">
                     <h1><a href="{% url 'blog:index' %}"><b>Ethan's</b> Blog</a></h1>
                 </div>
-            </div><!-- col-md-4 -->
-            <div class="col-md-8 col-sm-7 col-xs-4">
+            </div>--><!-- col-md-4 -->
+            <!--<div class="col-md-8 col-sm-7 col-xs-4">
                 <nav class="main-nav" role="navigation">
                     <div class="navbar-header">
                         <button type="button" id="trigger-overlay" class="navbar-toggle">
@@ -50,8 +65,39 @@
                             <li class="cl-effect-11"><a href="{% url 'blog:index' %}" data-hover="About">About</a></li>
                             <li class="cl-effect-11"><a href="{% url 'blog:index' %}" data-hover="Contact">Contact</a></li>
                         </ul>
-                    </div><!-- /.navbar-collapse -->
-                </nav>
+                    </div>
+
+                </nav>-->
+              <div class="container_m">
+                  <ul class="navigation_m">
+                      <h1 style="display: inline-block;margin-top: 20px; float:left;"><a href="{% url 'blog:index' %}"><b>Ethan's</b> Blog</a></h1>
+                    <li>
+                        <a href="{% url 'blog:index' %}" class="to top">
+                          <i class="fa fa-home"></i>
+                          <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blog:index' %}" class="to bottom">
+                          <i class="fa fa-qrcode"></i>
+                          <span>About</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'blog:index' %}" class="to left">
+                          <i class="fa fa-pencil"></i>
+                          <span>Journal</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blog:index' %}" class="to right">
+                          <i class="fa fa-heart"></i>
+                          <span>Contact</span>
+                        </a>
+                    </li>
+                  </ul>
+                </div>
                 <div id="header-search-box">
                     <a id="search-menu" href="#"><span id="search-icon" class="ion-ios-search-strong"></span></a>
                     <div id="search-form" class="search-form">
@@ -65,8 +111,8 @@
         </div>
     </header>
 </div>
-<div class="copyrights">Collect from <a href="http://www.cssmoban.com/">webpage template</a></div>
-<div class="copyrights">Modified by <a href="http://zmrenwu.com/">Ethan</a></div>
+
+<div class="copyrights">Modified by <a href="120.78.122.131">Ethan</a></div>
 
 <div class="content-body">
     <div class="container">
@@ -144,9 +190,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p class="copyright">&copy 2019 - Collect from<a href="http://www.cssmoban.com/"
-                                                        target="_blank" title="模板之家">Home of MOdels</a>
-                    - edited by<a>Ethan's Blog</a>
+                <p class="copyright">&copy 2019 <a>Ethan's Blog</a>
                 </p>
             </div>
         </div>
