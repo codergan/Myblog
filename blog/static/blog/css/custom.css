@@ -472,7 +472,7 @@ img {
  */
 
 #header-search-box {
-    position: absolute;
+    position: fixed;
     right: 38px;
     top: 8px;
 }
@@ -903,13 +903,13 @@ img {
   transition: all .2s ease-in-out;
 }
 .pagination a:hover {
-  color: deepskyblue;
-  border: 1px solid deepskyblue;
+  color: #2eb8b3;
+  border: 1px solid #2eb8b3;
 }
-.pagination .current-page {color: white; background-color: deepskyblue;}
+.pagination .current-page {color: white; background-color: #2eb8b3;}
 .pagination .current-page:hover {
   color: white;
-  border: 1px solid deepskyblue;
+  border: 1px solid #2eb8b3;
 }
 .pagination span {
   display: inline-block;
@@ -918,4 +918,9 @@ img {
   padding: 0 8px;
   margin-right: 4px;
 }
+h1{
+    background-color: rgba(0,255,255,0.1);
+}
+
+
 

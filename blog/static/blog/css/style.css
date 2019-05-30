@@ -104,3 +104,20 @@ body {
 .navigation_m li a:hover span {
   opacity: 1;
 }
+
+
+.navigation_m li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.navigation_m h1 {
+    background-color: rgba(0,255,255,0.2);
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+}
