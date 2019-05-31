@@ -922,5 +922,22 @@ h1{
     background-color: rgba(0,255,255,0.1);
 }
 
+#welcome_icon{
+    background-color: #00aaaa;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 10px;
+}
+
+#welcome_icon:hover{
+    background-color: dodgerblue;
+}
+
+#c_n1{
+    width:100%;
+    height: 0px;
+}
 
 

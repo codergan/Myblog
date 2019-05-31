@@ -1,18 +1,11 @@
 
-/* * {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font: 16px/1.5em Tahoma, sans-serif;
-  background-color: #48d1cc;
-}*/
 .container_m {
   position: relative;
   display: inline-block;
   min-height:1px;
   padding-right:15px;
   padding-left:15px;
+
 
   /*max-width: 35.83333333em;
   margin: 10% auto;
