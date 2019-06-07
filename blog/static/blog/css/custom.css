@@ -940,4 +940,36 @@ h1{
     height: 0px;
 }
 
+#imgs{
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+}
 
+#imgs img{
+    width:100%;
+    height:400px;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.bt{
+  display: inline-block;
+  line-height: 38px;
+  padding: 0 15px;
+  margin-right: 4px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #fff;
+  user-select: none;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #d7dde4;
+  border-radius: 4px;
+  transition: all .2s ease-in-out;
+}
+.bt:hover{
+  color: #2eb8b3;
+  border: 1px solid #2eb8b3;
+}
