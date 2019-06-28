@@ -5,8 +5,9 @@
   min-height:1px;
   padding-right:15px;
   padding-left:15px;
-  width：100%;
+  width: 100%;
   text-align: center;
+
 }
 
 .reset-position {
@@ -34,9 +35,7 @@
 }
 
 .navigation_m li {
-  width:12%;
   list-style: none;
-
   display: inline-block;
   margin: 1em;
 }
@@ -97,14 +96,8 @@
   list-style: none;
   display: inline-block;
   margin: 20px;
-  margin-bottom: 50px;
-  padding: 20px;
+  padding: 5px 5px;
+  position: relative;
 }
 
-.navigation_m h1 {
-    background-color: rgba(0,255,255,0.2);
-    padding: 20px;
-    display: inline-block;
-    position: relative;
-    top: 15px;
-}
+
