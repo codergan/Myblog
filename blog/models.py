@@ -15,6 +15,7 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.name
+
 class Post(models.Model):
     title = models.CharField(max_length=70)
     views = models.PositiveIntegerField(default=0)
@@ -63,3 +64,4 @@ class Post(models.Model):
 
         # 调用父类的 save 方法将数据保存到数据库中
         super(Post, self).save(*args, **kwargs)
+

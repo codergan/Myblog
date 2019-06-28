@@ -4,7 +4,8 @@ from .models import Post,Category,Tag
 from comments.forms import CommentForm
 from django.views.generic import ListView,DetailView
 from django.db.models import Q
-
+def contact(request):
+    return render(request, 'blog/contact.html')
 def search(request):
     q = request.GET.get('q')
     error_msg = ''
@@ -190,3 +191,4 @@ class TagView(ListView):
     def get_queryset(self):
         tag = get_object_or_404(Tag, pk=self.kwargs.get('pk'))
         return super(TagView, self).get_queryset().filter(tags=tag)
+

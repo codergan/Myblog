@@ -73,74 +73,47 @@
 <canvas id="c_n1"></canvas>
 
 <div class="container">
-    <!--<header id="site-header">
-        <div class="row">
-            <div class="col-md-4 col-sm-5 col-xs-8">
-                <div class="logo">
-                    <h1><a href="{% url 'blog:index' %}"><b>Ethan's</b> Blog</a></h1>
-                </div>
-            </div>--><!-- col-md-4 -->
-            <!--<div class="col-md-8 col-sm-7 col-xs-4">
-                <nav class="main-nav" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" id="trigger-overlay" class="navbar-toggle">
-                            <span class="ion-navicon"></span>
-                        </button>
-                    </div>
 
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="cl-effect-11"><a href="{% url 'blog:index' %}" data-hover="Home">Home</a></li>
-                            <li class="cl-effect-11"><a href="{% url 'blog:index' %}" data-hover="Blogs">Blogs</a></li>
-                            <li class="cl-effect-11"><a href="{% url 'blog:index' %}" data-hover="About">About</a></li>
-                            <li class="cl-effect-11"><a href="{% url 'blog:index' %}" data-hover="Contact">Contact</a></li>
-                        </ul>
-                    </div>
+      <div class="container_m">
+          <ul class="navigation_m">
+            <li>
+                <a href="{% url 'blog:index' %}">
+                    <i>Who?</i>
+                    <span><b>Ethan!</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'blog:index' %}" class="to top">
+                  <i class="fa fa-home"></i>
+                  <span>Home</span>
+                </a>
+            </li>
 
-                </nav>-->
-              <div class="container_m">
-                  <ul class="navigation_m">
-                      <h1 style="display: inline-block;margin-top: 20px; float:left;"><a href="{% url 'blog:index' %}"><b>Ethan's</b> Blog</a></h1>
-                    <li>
-                        <a href="{% url 'blog:index' %}" class="to top">
-                          <i class="fa fa-home"></i>
-                          <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{% url 'blog:index' %}" class="to bottom">
-                          <i class="fa fa-qrcode"></i>
-                          <span>About</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="{% url 'blog:index' %}" class="to left">
-                          <i class="fa fa-pencil"></i>
-                          <span>Journal</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{% url 'blog:index' %}" class="to right">
-                          <i class="fa fa-heart"></i>
-                          <span>Contact</span>
-                        </a>
-                    </li>
-                  </ul>
-                </div>
-                <div id="header-search-box">
-                    <a id="search-menu" href="#"><span id="search-icon" class="ion-ios-search-strong"></span></a>
-                    <div id="search-form" class="search-form">
-                        <form role="search" method="get" id="searchform" action="{% url 'blog:search' %}">
-                            <input type="search" name= "q" placeholder="Search" required>
-                            <button type="submit"><span class="ion-ios-search-strong"></span></button>
-                        </form>
-                    </div>
-                </div>
-            </div><!-- col-md-8 -->
+            <li>
+                <a href="{% url 'blog:index' %}" class="to left">
+                  <i class="fa fa-pencil"></i>
+                  <span>Journal</span>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'blog:contact' %}" class="to right">
+                  <i class="fa fa-heart"></i>
+                  <span>Contact</span>
+                </a>
+            </li>
+          </ul>
         </div>
-    </header>
+        <div id="header-search-box">
+            <a id="search-menu" href="#"><span id="search-icon" class="ion-ios-search-strong"></span></a>
+            <div id="search-form" class="search-form">
+                <form role="search" method="get" id="searchform" action="{% url 'blog:search' %}">
+                    <input type="search" name= "q" placeholder="Search" required>
+                    <button type="submit"><span class="ion-ios-search-strong"></span></button>
+                </form>
+            </div>
+        </div>
 </div>
+
 
 <div class="copyrights">Modified by <a href="120.78.122.131">Ethan</a></div>
 

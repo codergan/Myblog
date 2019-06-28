@@ -5,18 +5,10 @@
   min-height:1px;
   padding-right:15px;
   padding-left:15px;
-
-
-  /*max-width: 35.83333333em;
-  margin: 10% auto;
-  border-radius: 0.5em;
-  background-color: #5cd6d2;*/
+  width：100%;
+  text-align: center;
 }
-/*a {
-  text-decoration: none;
-  color: #ffffff;
-}*/
-/* Utility classes */
+
 .reset-position {
   top: 0;
   left: 0;
@@ -40,14 +32,16 @@
   display: inline-block;
   clear: both;
 }
+
 .navigation_m li {
+  width:12%;
   list-style: none;
-  float: left;
+
   display: inline-block;
   margin: 1em;
 }
 .navigation_m li a {
-  display: block;
+  display: inline-block;
   width: 5em;
   height: 5em;
   border-radius: 0.33333333em;
