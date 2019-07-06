@@ -5,7 +5,8 @@ from comments.forms import CommentForm
 from django.views.generic import ListView,DetailView
 from django.db.models import Q
 def contact(request):
-    return render(request, 'blog/contact.html',{})
+    return render(request, 'blog/contact.html',{'name':'Ethan',
+                                                'email':'ethan.gan.xin@gmail.com'})
 def search(request):
     q = request.GET.get('q')
     error_msg = ''
