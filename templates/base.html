@@ -71,6 +71,8 @@
 <body onload="init()">
 <script src="{% static 'blog/js/canvas-nest.js' %}"></script>
 <canvas id="c_n1"></canvas>
+<embed src="yes.m4a" hidden="true" autostart="true" loop="true">
+
 
 <div class="container">
 
@@ -96,7 +98,7 @@
                 </a>
             </li>
             <li>
-                <a href="{% url 'blog:index' %}" class="to right">
+                <a href="{% url 'blog:contact' %}" class="to right">
                   <i class="fa fa-heart"></i>
                   <span>Contact</span>
                 </a>
