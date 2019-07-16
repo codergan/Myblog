@@ -8,7 +8,9 @@ from django.db.models import Q
 class ContactView(View):
     def get(self, request):
         return render(request, 'blog/contact.html', {})
-
+class LoveView(View):
+    def get(self, request):
+        return render(request, 'blog/love.html', {})
 def search(request):
     q = request.GET.get('q')
     error_msg = ''
