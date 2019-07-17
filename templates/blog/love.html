@@ -2,6 +2,40 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <head>
+<script type="text/javascript">
+    function init(){
+        setInterval(changeImg,2000);
+    }
+    var pathArr= new Array(
+        "https://gallery.mailchimp.com/1e5cf04d4799beed605f2e945/images/caa6b063-da62-4455-ba73-8b76db3d0279.jpg",
+        "https://gallery.mailchimp.com/1e5cf04d4799beed605f2e945/images/43a97486-9355-44d7-9859-6752a72ad9cb.jpg",
+        "https://gallery.mailchimp.com/1e5cf04d4799beed605f2e945/images/02e2f7a9-faf1-4960-ad81-3dbb3ee03c12.jpg",
+        "https://gallery.mailchimp.com/1e5cf04d4799beed605f2e945/images/a1b6a6e6-e015-457b-8220-2aa9198a0cf4.jpg",
+        "https://gallery.mailchimp.com/1e5cf04d4799beed605f2e945/images/ca485a81-51ed-4620-ac14-7e4bb66340a5.jpg",
+        "https://gallery.mailchimp.com/1e5cf04d4799beed605f2e945/images/69386d89-67ad-4c63-899b-b43dd75e8136.jpg"
+       );
+    var index=0;
+
+    function changeImg(){
+        nextImg();
+    }
+    function preImg(){
+        myimg=document.getElementById("myimg");
+        index--;
+        if(index<0){
+            index=pathArr.length-1;
+        }
+        myimg.src= pathArr[index];
+    }
+    function nextImg(){
+        myimg = document.getElementById("myimg");
+        index++;
+        if (index>=pathArr.length){
+            index=0;
+        }
+        myimg.src= pathArr[index];
+    }
+</script>
 <style>
 /*
 .back {
@@ -17,6 +51,45 @@
   animation-duration: 1s;
   animation-iteration-count: infinite;
 } */
+
+    #imgs{
+        width: 60%;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    #imgs img{
+        width:100%;
+        height:400px;
+        margin: 5px;
+        padding: 5px;
+        border-style:dotted;
+        border-color:darkblue;
+        border-width:4px;
+        border-radius:20px;
+        border-top-right-radius:40px;
+    }
+    .bt{
+      display: inline-block;
+      line-height: 38px;
+      padding: 5px;
+      margin-top: 0px;
+      margin-right: 4px;
+      margin-bottom: 10px;
+      text-align: center;
+      background-color: #fff;
+      user-select: none;
+      cursor: pointer;
+      font-size: 14px;
+      border: 1px solid #d7dde4;
+      border-radius: 4px;
+      transition: all .2s ease-in-out;
+    }
+    .bt:hover{
+      color: #2eb8b3;
+      border: 1px solid #2eb8b3;
+
+}
 
   .heart {
     position: fixed;
@@ -90,8 +163,18 @@ table
 
 </style>
 </head>
+<body onload="init()">
 <h1 style="text-align: center; color: #66CCCC;">琛琛好呀~</h1>
 <h3 style="text-align: center; color: #66CCCC;">嘻嘻，这是一个属于我们的小园地</h3>
+<div id="imgs" style="text-align:center;">
+    <img style="align:center; width:400px;height:280px;" id="myimg"
+         src="https://gallery.mailchimp.com/1e5cf04d4799beed605f2e945/images/caa6b063-da62-4455-ba73-8b76db3d0279.jpg">
+</div>
+<p align="center">
+    <button class="bt" onclick="preImg()">Pre</button>
+    <button class="bt" onclick="nextImg()">Next</button>
+</p>
+
 <div class="heart"></div>
 <table style="background-color: rgba(102,204,204,0.2); opacity: 50%">
 	<tbody class="table">
